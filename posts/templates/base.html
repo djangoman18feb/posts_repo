@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block head_block %}base{% endblock %}</title>
+</head>
+<body>
+    <div>
+    <h1>I am in base still showing up how??</h1>
+        {% block content %}
+            <h1>i am in block in base . am i showing up too?</h1><h3>which means we can use block.super to show everything from base</h3>
+            <h3>This is post list page</h3>
+            {% include 'message_display.html' %}
+        {% endblock %}
+    </div>
+</body>
+</html>
